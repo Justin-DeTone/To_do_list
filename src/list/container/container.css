@@ -1,0 +1,31 @@
+.container {
+    border-style: solid;
+    /* border-radius: 10px; */
+    border-width: 5px;
+    width: 35%;
+    display: inline-grid;
+    margin: auto;
+    grid-template-columns: 10% auto 10%;
+}
+
+.container-box1 {
+    grid-column: 1 / 2;
+    display: flex;
+    background-color: aqua;
+}
+
+.container-box2 {
+    grid-column: 2 / 3;
+    display: flex;
+}
+
+.container-box3 {
+    grid-column: 3 / 4;
+    display: flex;
+}
+
+.fillText {
+    width: 50%;
+    margin: auto 30px;
+    text-align: left;
+}

@@ -1,0 +1,14 @@
+div.checkbox {
+    display: inline-block;
+    background-color: white;
+    border-radius: 15%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    padding: 3px;
+    margin: auto;
+}
+
+.fa-check {
+    font-size: 1.5rem;
+}

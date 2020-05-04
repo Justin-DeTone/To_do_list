@@ -1,0 +1,23 @@
+.button, .button:hover {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    border-style: solid;
+    background-color: white;
+    border-color: rgb(127, 58, 255);
+    color: rgb(127, 58, 255);
+    border-width: 5px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px gray;
+}
+

@@ -12,14 +12,28 @@ class List extends Component {
         };
     }
 
+    addItemToList(textContent) {
+        let toDoItemsList = [...this.state.listItems];
+        toDoItemsList.push({text: textContent, isChecked: false,});
+        return toDoItemsList;
+    }
+
+    addToDo = (e) => {
+        e.preventDefault();
+        let newText = e.target.querySelector("textarea").value;
+        console.log(newText);
+        this.setState({listItems: this.addItemToList(newText)});
+    }
+
     render() {
-        const listTasks = this.state.listItems.map((item) =>
-            <Container isChecked={item.isChecked} text={item.text} />
+        const listTasks = this.state.listItems.map((item, idx) =>
+            <Container isChecked={item.isChecked} key={idx} 
+            text={item.text} />
         );
         return(
             <div className="to-do-list">
                 {listTasks}
-            <Input />
+            <Input newToDo={this.addToDo} />
             </div>
         )
     }

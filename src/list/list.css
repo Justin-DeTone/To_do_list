@@ -1,3 +1,8 @@
 .to-do-list {
-    background-color: cadetblue;
+    background-color: rgb(140, 52, 255);
+    border-radius: 20px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 20px;
 }

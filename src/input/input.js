@@ -4,11 +4,13 @@ import "./input.css";
 export function Input(props) {
     return(
         <div className="input">
-            <label for="new-to-do"></label>
-            <textarea id="new-to-do" name="new-to-do"
-                    rows="2" cols="33">
-                        New to do item
-                    </textarea>
+            <form onSubmit={props.newToDo}>
+                <label htmlFor="new-to-do"></label>
+                <textarea id="new-to-do" name="new-to-do"
+                        rows="2" cols="33" defaultValue="New to do item">
+                </textarea>            
+                <button>Submit</button> 
+            </form>
         </div>
     )
 }
